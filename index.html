@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header-logo">
+        <div class="logo">
+          <img src="image/logo.png" alt="Logo" />
+        </div>
+      </div>
+      <div class="header">
+        <h2>PAY YOUR FEE ONLINE</h2>
+      </div>
+      <form id="form" class="form">
+        <div class="form-control">
+          <input type="text" placeholder="First Name" id="firstName" />
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+          <small>Error message</small>
+        </div>
+
+        <div class="form-control">
+          <input type="text" placeholder="Last Name" id="lastName" />
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+          <small>Error message</small>
+        </div>
+
+        <div class="form-control" style="display: flex">
+          <select style="width: 25%">
+            <option selected>+91</option>
+          </select>
+          <input type="tel" placeholder="Mobile" id="mobile" />
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+          <small>Error message</small>
+        </div>
+
+        <div class="form-control">
+          <input type="email" placeholder="Email" id="email" />
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+          <small>Error message</small>
+        </div>
+
+        <div class="form-control">
+          <input
+            type="text"
+            placeholder="Enter the Exact Alpha Numeric Application No."
+            id="alphaNumaric"
+          />
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+          <small>Error message</small>
+        </div>
+
+        <div class="form-control">
+          <input
+            type="text"
+            placeholder="Enter the Exact Numeric Admission No."
+            id="numreic"
+          />
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+          <small>Error message</small>
+        </div>
+
+        <div class="form-control">
+          <select class="programName" name="programName" id="programName">
+            <option value="">Program Name</option>
+            <optgroup label="Engineering">
+              <option value="B.E Bio-Medical Engineering">
+                B.E Bio-Medical Engineering
+              </option>
+              <option value="B.E Computer Science and Engineering">
+                B.E Computer Science and Engineering
+              </option>
+              <option value="B.E Electronics and Communication Engineering">
+                B.E Electronics and Communication Engineering
+              </option>
+              <option value="B.E Agriculture Engineering">
+                B.E Agriculture Engineering
+              </option>
+              <option value="B.E Mechanical Engineering">
+                B.E Mechanical Engineering
+              </option>
+              <option value="B.Tech – Information Technology">
+                B.Tech – Information Technology
+              </option>
+              <option value="B.Tech Artificial Intelligence and Data Science">
+                B.Tech Artificial Intelligence and Data Science
+              </option>
+              <option value="B.Tech Bio Technology">
+                B.Tech Bio Technology
+              </option>
+              <option value="M.E Applied Electronics">
+                M.E Applied Electronics
+              </option>
+              <option value="M.E Bio-metrics and Cyber Security">
+                M.E Bio-metrics and Cyber Security
+              </option>
+            </optgroup>
+            <optgroup label="Arts &amp; Science">
+              <option value="B.Sc. Information Technology">
+                B.Sc. Information Technology
+              </option>
+              <option value="B.Sc. Computer Technology">
+                B.Sc. Computer Technology
+              </option>
+              <option value="B.Sc. Computer Science">
+                B.Sc. Computer Science
+              </option>
+              <option value="B.Sc. Visual Communication">
+                B.Sc. Visual Communication
+              </option>
+              <option value="B.Sc. Costume Design and Fashion">
+                B.Sc. Costume Design and Fashion
+              </option>
+              <option value="B.Sc. Mathematics">B.Sc. Mathematics</option>
+              <option value="B.Sc Physics">B.Sc Physics</option>
+              <option value="B.Sc Psychology">B.Sc Psychology</option>
+              <option value="B.Sc Biotechnology">B.Sc Biotechnology</option>
+              <option value="B.Sc Bio-medical Electronics">
+                B.Sc Bio-medical Electronics
+              </option>
+              <option value="B.Sc Micro-Biology">B.Sc Micro-Biology</option>
+              <option value="B.Sc.CS">
+                B.Sc.CS(Specialization with Cloud Infrastructure &amp;
+                Information Security)
+              </option>
+              <option value="B.Sc.IT">
+                B.Sc.IT(with Specialization of Data Science)
+              </option>
+              <option
+                value="B.Sc Visual Communication With Specialization Of Animation and Vfx"
+              >
+                B.Sc Visual Communication With Specialization Of Animation and
+                Vfx
+              </option>
+              <option value="B.Sc Artificial Intelligence and Machine Learning">
+                B.Sc Artificial Intelligence and Machine Learning
+              </option>
+              <option value="B.Sc Digital and Cyber Forensics Science">
+                B.Sc Digital and Cyber Forensics Science
+              </option>
+              <option value="B.Sc Biomedical Electronics">
+                B.Sc Biomedical Electronics
+              </option>
+              <option
+                value="B.Sc Information Technology Specialization in Blockchain and Distributed Systems"
+              >
+                B.Sc Information Technology Specialization in Blockchain and
+                Distributed Systems
+              </option>
+              <option value="BA English Literature">
+                BA English Literature
+              </option>
+              <option value="B.Com">B.Com</option>
+              <option value="B.Com with ACCA">B.Com with ACCA</option>
+              <option value="B.com BPS">B.com BPS</option>
+              <option value="B.Com PA">B.Com PA</option>
+              <option value="B.Com (Computer Applications)">
+                B.Com (Computer Applications)
+              </option>
+              <option value="B.Com (Corporate Secretaryship)">
+                B.Com (Corporate Secretaryship)
+              </option>
+              <option value="B.Com (Banking &amp; Insurance)">
+                B.Com (Banking &amp; Insurance)
+              </option>
+              <option value="B.Com (Accounting and Finance)">
+                B.Com (Accounting and Finance)
+              </option>
+              <option value="B.Com (financial services)">
+                B.Com (financial services)
+              </option>
+              <option value="B.Com (Information Technology)">
+                B.Com (Information Technology)
+              </option>
+              <option value="B.com Actuarial Science">
+                B.com Actuarial Science
+              </option>
+              <option
+                value="B.Com Financial Services specialization in Digital Finance"
+              >
+                B.Com Financial Services specialization in Digital Finance
+              </option>
+              <option value="B.Com International Business">
+                B.Com International Business
+              </option>
+              <option
+                value="B.Com IT With Specialization Of Accounting Analytics"
+              >
+                B.Com IT With Specialization Of Accounting Analytics
+              </option>
+              <option value="BCA">BCA</option>
+              <option value="BCA Specialization in Artificial Intelligence">
+                BCA Specialization in Artificial Intelligence
+              </option>
+              <option value="BCA Specialization in DevOps and Automation">
+                BCA Specialization in DevOps and Automation
+              </option>
+              <option value="BBA (Computer Application)">
+                BBA (Computer Application)
+              </option>
+              <option value="BBA (Aviation)">BBA (Aviation)</option>
+              <option
+                value="BBA Computer Application with specialization in Aviation"
+              >
+                BBA Computer Application with specialization in Aviation
+              </option>
+              <option value="BBA Logistics">BBA Logistics</option>
+              <option value="M.Sc. Computer Science">
+                M.Sc. Computer Science
+              </option>
+              <option value="M.Sc. Information Technology">
+                M.Sc. Information Technology
+              </option>
+              <option value="M.Sc. Data Science and Business Analytics">
+                M.Sc. Data Science and Business Analytics
+              </option>
+              <option value="M.Sc. Mathematics">M.Sc. Mathematics</option>
+              <option value="MSc Applied Psychology">
+                MSc Applied Psychology
+              </option>
+              <option value="MSc Bio-Technology">MSc Bio-Technology</option>
+              <option
+                value="MSc Computer Science Specialization in Information Security and Cyber Forensics"
+              >
+                MSc Computer Science Specialization in Information Security and
+                Cyber Forensics
+              </option>
+              <option value="M.Com">M.Com</option>
+              <option value="M.Com (Computer Applications)">
+                M.Com (Computer Applications)
+              </option>
+              <option value="M.A (Journalism and Mass Communication)">
+                M.A (Journalism and Mass Communication)
+              </option>
+              <option value="M.A (English Literature)">
+                M.A (English Literature)
+              </option>
+              <option value="M. Phil (English)">M. Phil (English)</option>
+            </optgroup>
+            <optgroup label="Architecture">
+              <option value="Architecture">Architecture</option>
+            </optgroup>
+            <optgroup label="MBA">
+              <option value="MBA">Master of Business Administration</option>
+              <option value="MBA (IEV)">
+                MBA Innovation, Entrepreneurship and venture Development (IEV)
+              </option>
+              <option value="MBA Management">MBA Management</option>
+            </optgroup>
+          </select>
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+          <small>Error message</small>
+        </div>
+
+        <div class="form-control">
+          <select name="instalment" id="instalment">
+            <option value="">Instalment</option>
+            <option value="instalment 1">Instalment 1</option>
+            <option value="instalment 2">Instalment 2</option>
+            <option value="instalment 3">Instalment 3</option>
+            <option value="instalment 4">Instalment 4</option>
+            <option value="instalment 5">Instalment 5</option>
+          </select>
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+          <small>Error message</small>
+        </div>
+
+        <div class="form-control">
+          <input type="number" placeholder="amount" id="amount" />
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+          <small>Error message</small>
+        </div>
+
+        <div class="form-control">
+          <input type="submit" value="Proceed" name="submit" class="btn-sbt" />
+        </div>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
