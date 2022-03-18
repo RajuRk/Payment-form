@@ -59,13 +59,13 @@ const checkInputs = () => {
   }
 
   if (alphaNumaricValue === "") {
-    setErrorFor(alphaNumaric, "Alpha Numeric Application No connot be blank");
+    setErrorFor(alphaNumaric, "Application No connot be blank");
   } else {
     setSuccessFor(alphaNumaric);
   }
 
   if (numreicValue === "") {
-    setErrorFor(numreic, "Numeric Admission No connot be blank");
+    setErrorFor(numreic, "Admission Roll No connot be blank");
   } else {
     setSuccessFor(numreic);
   }
