@@ -58,17 +58,29 @@ const checkInputs = () => {
     setSuccessFor(email);
   }
 
-  if (alphaNumaricValue === "") {
-    setErrorFor(alphaNumaric, "Application No connot be blank");
-  } else {
-    setSuccessFor(alphaNumaric);
+  if (alphaNumaricValue === "" && numreicValue === "") {
+    if (alphaNumaricValue === "") {
+      setErrorFor(alphaNumaric, "Error");
+    } else if (numreicValue === "") {
+      setErrorFor(numreic, "Error");
+    }
+  } else if (alphaNumaricValue > 1 || numreicValue > 1) {
+    if (alphaNumaricValue > 1) {
+      setSuccessFor(alphaNumaric);
+    } else if (numreicValue > 1) {
+      setSuccessFor(numreic);
+    }
   }
 
-  if (numreicValue === "") {
-    setErrorFor(numreic, "Admission Roll No connot be blank");
-  } else {
-    setSuccessFor(numreic);
-  }
+  // else {
+  //   setSuccessFor(alphaNumaric);
+  // }
+
+  // if (numreicValue === "") {
+  //   setErrorFor(numreic, "Admission Roll No connot be blank");
+  // } else {
+  //   setSuccessFor(numreic);
+  // }
 
   if (programNameValue === "") {
     setErrorFor(programName, "Select One Program");
@@ -103,6 +115,13 @@ const setSuccessFor = (input) => {
   const formControl = input.parentElement;
   formControl.className = "form-control success";
 };
+
+// const setError = (message) => {
+//   const formControl = parentElement;
+//   const small = formControl.querySelector("small");
+//   formControl.className = "form-control error";
+//   small.innerText = message;
+// };
 
 function isEmail(email) {
   return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(
